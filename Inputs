@@ -8,6 +8,8 @@ apellido1 = input("Primer Apellido: ")
 
 apellido2 = input("Segundo Apellido: ")
 
+genero = input("Genero: ")
+
 print(f"Escriba solo dos digitos en los siguientes apartados")
 
 añonacimiento = input("Año de nacimiento: ")
