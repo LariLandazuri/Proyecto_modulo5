@@ -1,0 +1,73 @@
+est = ""
+if estado == "Aguascalientes":
+    est += "AGS" 
+elif estado == "Baja California":
+    est +="BC" 
+elif estado == "Baja California Sur":
+    est +="BCS"
+elif estado == "Campeche":
+    est +="CC"
+elif estado == "Baja California":
+    est +="BC" 
+elif estado == "Colima":
+    est +="CM"
+elif estado == "Chiapas":
+    est +="CS"
+elif estado == "Chihuahua":
+    est +="CH"
+elif estado == "Distrito Federal":
+    est +="DF"
+elif estado == "Durango":
+    est +="DG"
+elif estado == "Guerrero":
+    est +="GR"
+elif estado == "Hidalgo":
+    est +="HG"
+elif estado == "Jalisco":
+    est +="JC"
+elif estado == "Nayarit":
+    est +="NT"
+elif estado == "Morelos":
+    est +="MS"
+elif estado == "Michoacan":
+    est +="MN"
+elif estado == "Mexico":
+    est +="MC"
+elif estado == "Hidalgo":
+    est +="HG"
+elif estado == "Nuevo Leon":
+    est +="NL"
+elif estado == "Oaxaca":
+    est +="OC"
+elif estado == "Puebla":
+    est +="PL"
+elif estado == "Queretaro":
+    est +="QT"
+elif estado == "Quintana Roo":
+    est +="QR"
+elif estado == "San Luis  Potosi":
+    est +="SP"
+elif estado == "Sinaloa":
+    est +="SL"
+elif estado == "Sonora":
+    est +="SR"
+elif estado == "Tabasco":
+    est +="TC"
+elif estado == "Tamaulipas":
+    est +="TS"
+elif estado == "Tlaxcala":
+    est +="TL"
+elif estado == "Veracruz:":
+    est +="VZ"
+elif estado == "Yucatan":
+    est +="YN"
+elif estado == "Zacatecas":
+    est +="ZS"
+elif estado == "Veracruz:":
+    est +="VZ"
+elif estado == "Extranjero":
+    est +="NE"
+elif estado == "Desconocido":
+    est +="Desconocido"
+elif estado == "Coahuila":
+    est +="CL"
