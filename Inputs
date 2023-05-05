@@ -1,0 +1,19 @@
+import os
+
+print("Para ayudarte a generar tu RFC necesito que me compartas los siguientes datos:")
+
+nombre = input("Nombre: ")
+
+apellido1 = input("Primer Apellido: ")
+
+apellido2 = input("Segundo Apellido: ")
+
+print(f"Escriba solo dos digitos en los siguientes apartados")
+
+añonacimiento = input("Año de nacimiento: ")
+
+mesnacimiento = input("Mes de nacimiento: ")
+
+dianacimiento = input("Dia de nacimiento: ")
+
+estado = input("Estado: ")
