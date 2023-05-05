@@ -1,0 +1,36 @@
+palabra = list(apellido1.upper())
+
+temp=""
+
+for letra in palabra:
+
+   if letra == "A":
+
+       temp+="A"
+
+   elif letra == "E":
+
+       temp+="E"
+
+   elif letra == "I":
+
+       temp+="I"
+
+   elif letra == "O":
+
+       temp+="O"
+
+   elif letra == "U":
+
+       temp+="U"
+
+        
+if palabra[0] == "A" or palabra[0] == "E" or palabra[0] == "I" or palabra[0] == "O" or palabra[0] == "U":
+
+   vocal = temp[1]
+
+else:
+
+   vocal = temp[0]
+
+os.system ('pause')
