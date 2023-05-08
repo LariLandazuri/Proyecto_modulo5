@@ -1,0 +1,28 @@
+palabra = palabra[1:]
+apellido2 = apellido2[1:]
+nombre = nombre[1:]
+
+vocales = ('A','E','I','O','U')
+
+consonante_ape = " "
+for letters in palabra:
+    if letters not in vocales:
+        consonante_ape = consonante_ape+letters
+
+	
+consonante_ape2 = " "
+for letters in apellido2:
+    if letters not in vocales:
+        consonante_ape2 = consonante_ape2+letters
+
+consonante_nom = " "
+for letters in nombre:
+    if letters not in vocales:
+        consonante_nom = consonante_nom+letters  
+	
+	
+	
+curp = apellido1[0] + vocal + apellido2[0] + nombre[0]+ añonacimiento + mesnacimiento + dianacimiento + genero + est + consonante_ape[1] + consonante_ape2[1] + consonante_nom[1]
+print(curp)
+
+os.system ('pause')
