@@ -32,5 +32,3 @@ if palabra[0] == "A" or palabra[0] == "E" or palabra[0] == "I" or palabra[0] == 
 else:
 
    vocal = temp[0]
-
-os.system ('pause')
