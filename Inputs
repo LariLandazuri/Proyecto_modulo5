@@ -1,0 +1,27 @@
+import os
+
+print("Para ayudarte a generar tu CURP necesito que me compartas los siguientes datos:")
+print(f"Escriba todo en mayúsculas y sin acentos") 
+
+nombre = input("Nombre: ")
+
+apellido1 = input("Primer Apellido: ")
+
+apellido2 = input("Segundo Apellido: ")
+
+print(f"Escriba M en mayúscula para mujer y H para hombre")
+
+genero = input("Género:" )
+
+print(f"Escriba solo dos digitos en los siguientes apartados")
+
+añonacimiento = input("Año de nacimiento: ")
+
+mesnacimiento = input("Mes de nacimiento: ")
+
+dianacimiento = input("Dia de nacimiento: ")
+
+print(f"Escriba el Estado comenzando en mayúscula y sin incluir acentos, ejemplo: Nuevo Leon")
+
+estado = input("Estado: ")
+
