@@ -1,6 +1,7 @@
 import os
 
-print("Para ayudarte a generar tu RFC necesito que me compartas los siguientes datos:")
+print("Para ayudarte a generar tu CURP necesito que me compartas los siguientes datos:")
+print(f"Escriba todo en mayúsculas y sin acentos") 
 
 nombre = input("Nombre: ")
 
@@ -10,7 +11,7 @@ apellido2 = input("Segundo Apellido: ")
 
 print("Escribe tu genero como Hombre o Mujer")
 
-genero = input("Genero: ")
+genero = input("Género: ")
 
 print(f"Escriba solo dos digitos en los siguientes apartados")
 
@@ -18,7 +19,7 @@ añonacimiento = input("Año de nacimiento: ")
 
 mesnacimiento = input("Mes de nacimiento: ")
 
-dianacimiento = input("Dia de nacimiento: ")
+dianacimiento = input("Día de nacimiento: ")
 
 estado = input("Estado: ")
 
@@ -141,6 +142,35 @@ elif estado == "Desconocido":
 elif estado == "Coahuila":
     est +="CL"
     
-rfc = apellido1[0] + vocal + apellido2[0] + nombre[0] + añonacimiento + mesnacimiento + dianacimiento + gen + est
+    
+ palabra = palabra[1:]
+apellido2 = apellido2[1:]
+nombre = nombre[1:]
 
-print("Tu RFC es:", rfc)
+vocales = ('A','E','I','O','U')
+
+consonante_ape = " "
+for letters in palabra:
+    if letters not in vocales:
+        consonante_ape = consonante_ape+letters
+
+	
+consonante_ape2 = " "
+for letters in apellido2:
+    if letters not in vocales:
+        consonante_ape2 = consonante_ape2+letters
+
+consonante_nom = " "
+for letters in nombre:
+    if letters not in vocales:
+        consonante_nom = consonante_nom+letters  
+	
+	
+	
+curp = apellido1[0] + vocal + apellido2[0] + nombre[0]+ añonacimiento + mesnacimiento + dianacimiento + gen + est + consonante_ape[1] + consonante_ape2[1] + consonante_nom[1]
+
+
+print("Tu CURP es:", curp)
+
+
+os.system ('pause')
