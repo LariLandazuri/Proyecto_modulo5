@@ -20,6 +20,7 @@ mesnacimiento = input("Mes de nacimiento: ")
 
 dianacimiento = input("Dia de nacimiento: ")
 
+print(f"Escriba el Estado comenzando en mayúscula y sin incluir acentos, ejemplo: Nuevo Leon")
 estado = input("Estado: ")
 
 palabra = list(apellido1.upper())
@@ -114,7 +115,7 @@ elif estado == "Queretaro":
     est +="QT"
 elif estado == "Quintana Roo":
     est +="QR"
-elif estado == "San Luis  Potosi":
+elif estado == "San Luis Potosi":
     est +="SP"
 elif estado == "Sinaloa":
     est +="SL"
