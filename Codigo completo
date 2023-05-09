@@ -8,6 +8,8 @@ apellido1 = input("Primer Apellido: ")
 
 apellido2 = input("Segundo Apellido: ")
 
+print("Escribe tu genero como Hombre o Mujer")
+
 genero = input("Genero: ")
 
 print(f"Escriba solo dos digitos en los siguientes apartados")
@@ -57,11 +59,11 @@ else:
 
 os.system ('pause')
 
-est = ""
+gen = ""
 if genero == "Hombre":
-    est += "H"
+    gen += "H"
 elif genero == "Mujer":
-    est += "M"
+    gen += "M"
 
 
 
@@ -139,6 +141,6 @@ elif estado == "Desconocido":
 elif estado == "Coahuila":
     est +="CL"
     
-rfc = apellido1[0] + vocal + apellido2[0] + nombre[0] + añonacimiento + mesnacimiento + dianacimiento + genero + est
+rfc = apellido1[0] + vocal + apellido2[0] + nombre[0] + añonacimiento + mesnacimiento + dianacimiento + gen + est
 
 print("Tu RFC es:", rfc)
