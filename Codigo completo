@@ -142,25 +142,25 @@ elif estado == "Desconocido":
 elif estado == "Coahuila":
     est +="CL"
     
-palabra = palabra[1:]
-apellido2 = apellido2[1:]
-nombre = nombre[1:]
+palabra2 = palabra[1:]
+apellido22 = apellido2[1:]
+nombre2 = nombre[1:]
 
 vocales = ('A','E','I','O','U')
 
 consonante_ape = " "
-for letters in palabra:
+for letters in palabra2:
     if letters not in vocales:
         consonante_ape = consonante_ape+letters
 
 	
 consonante_ape2 = " "
-for letters in apellido2:
+for letters in apellido22:
     if letters not in vocales:
         consonante_ape2 = consonante_ape2+letters
 
 consonante_nom = " "
-for letters in nombre:
+for letters in nombre2:
     if letters not in vocales:
         consonante_nom = consonante_nom+letters  
 
@@ -170,8 +170,7 @@ homoclave = random.randint(0,100)
 digitov= random.randint(0,100)
 
 	
-curp = apellido1[0] + vocal + apellido2[0] + nombre[0]+ añonacimiento + mesnacimiento + dianacimiento + gen + est 
-+ consonante_ape[1] + consonante_ape2[1] + consonante_nom[1] + homoclave + digitov
+curp = apellido1[0] + vocal + apellido2[0] + nombre[0]+ añonacimiento + mesnacimiento + dianacimiento + gen + est + consonante_ape[1] + consonante_ape2[1] + consonante_nom[1] + homoclave + digitov
 
 	
 print("Tu CURP es:", curp)
