@@ -163,12 +163,17 @@ consonante_nom = " "
 for letters in nombre:
     if letters not in vocales:
         consonante_nom = consonante_nom+letters  
-	
-	
-	
-curp = apellido1[0] + vocal + apellido2[0] + nombre[0]+ añonacimiento + mesnacimiento + dianacimiento + gen + est + consonante_ape[1] + consonante_ape2[1] + consonante_nom[1]
 
+import random
 
+homoclave = random.randint(0,100)
+digitov= random.randint(0,100)
+
+	
+curp = apellido1[0] + vocal + apellido2[0] + nombre[0]+ añonacimiento + mesnacimiento + dianacimiento + genero + est 
++ consonante_ape[1] + consonante_ape2[1] + consonante_nom[1] + homoclave + digitov
+
+	
 print("Tu CURP es:", curp)
 
 
