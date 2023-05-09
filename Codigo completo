@@ -1,0 +1,144 @@
+import os
+
+print("Para ayudarte a generar tu RFC necesito que me compartas los siguientes datos:")
+
+nombre = input("Nombre: ")
+
+apellido1 = input("Primer Apellido: ")
+
+apellido2 = input("Segundo Apellido: ")
+
+genero = input("Genero: ")
+
+print(f"Escriba solo dos digitos en los siguientes apartados")
+
+añonacimiento = input("Año de nacimiento: ")
+
+mesnacimiento = input("Mes de nacimiento: ")
+
+dianacimiento = input("Dia de nacimiento: ")
+
+estado = input("Estado: ")
+
+palabra = list(apellido1.upper())
+
+temp=""
+
+for letra in palabra:
+
+   if letra == "A":
+
+       temp+="A"
+
+   elif letra == "E":
+
+       temp+="E"
+
+   elif letra == "I":
+
+       temp+="I"
+
+   elif letra == "O":
+
+       temp+="O"
+
+   elif letra == "U":
+
+       temp+="U"
+
+        
+if palabra[0] == "A" or palabra[0] == "E" or palabra[0] == "I" or palabra[0] == "O" or palabra[0] == "U":
+
+   vocal = temp[1]
+
+else:
+
+   vocal = temp[0]
+
+os.system ('pause')
+
+est = ""
+if genero == "Hombre":
+    est += "H"
+elif genero == "Mujer":
+    est += "M"
+
+
+
+est = ""
+if estado == "Aguascalientes":
+    est += "AGS" 
+elif estado == "Baja California":
+    est +="BC" 
+elif estado == "Baja California Sur":
+    est +="BCS"
+elif estado == "Campeche":
+    est +="CC"
+elif estado == "Baja California":
+    est +="BC" 
+elif estado == "Colima":
+    est +="CM"
+elif estado == "Chiapas":
+    est +="CS"
+elif estado == "Chihuahua":
+    est +="CH"
+elif estado == "Distrito Federal":
+    est +="DF"
+elif estado == "Durango":
+    est +="DG"
+elif estado == "Guerrero":
+    est +="GR"
+elif estado == "Hidalgo":
+    est +="HG"
+elif estado == "Jalisco":
+    est +="JC"
+elif estado == "Nayarit":
+    est +="NT"
+elif estado == "Morelos":
+    est +="MS"
+elif estado == "Michoacan":
+    est +="MN"
+elif estado == "Mexico":
+    est +="MC"
+elif estado == "Hidalgo":
+    est +="HG"
+elif estado == "Nuevo Leon":
+    est +="NL"
+elif estado == "Oaxaca":
+    est +="OC"
+elif estado == "Puebla":
+    est +="PL"
+elif estado == "Queretaro":
+    est +="QT"
+elif estado == "Quintana Roo":
+    est +="QR"
+elif estado == "San Luis  Potosi":
+    est +="SP"
+elif estado == "Sinaloa":
+    est +="SL"
+elif estado == "Sonora":
+    est +="SR"
+elif estado == "Tabasco":
+    est +="TC"
+elif estado == "Tamaulipas":
+    est +="TS"
+elif estado == "Tlaxcala":
+    est +="TL"
+elif estado == "Veracruz:":
+    est +="VZ"
+elif estado == "Yucatan":
+    est +="YN"
+elif estado == "Zacatecas":
+    est +="ZS"
+elif estado == "Veracruz:":
+    est +="VZ"
+elif estado == "Extranjero":
+    est +="NE"
+elif estado == "Desconocido":
+    est +="Desconocido"
+elif estado == "Coahuila":
+    est +="CL"
+    
+rfc = apellido1[0] + vocal + apellido2[0] + nombre[0] + añonacimiento + mesnacimiento + dianacimiento + genero + est
+
+print("Tu RFC es:", rfc)
